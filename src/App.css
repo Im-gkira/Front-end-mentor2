@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.main {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  grid-template: 40vh 60vh / 100wh;
+}
+
+.result {
+  text-align: center;
+  background-image: linear-gradient(
+    185deg,
+    hsl(251deg 97% 62%) 0%,
+    hsl(250deg 95% 61%) 21%,
+    hsl(249deg 93% 60%) 41%,
+    hsl(248deg 91% 59%) 61%,
+    hsl(247deg 90% 59%) 80%,
+    hsl(246deg 88% 58%) 100%
+  );
+  padding: 1rem 3rem 2rem 3rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+  color: white;
+}
+
+.avg--score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    185deg,
+    hsl(253deg 70% 48%) 0%,
+    hsl(252deg 69% 50%) 21%,
+    hsl(250deg 72% 52%) 41%,
+    hsl(249deg 77% 54%) 61%,
+    hsl(247deg 82% 56%) 80%,
+    hsl(246deg 88% 58%) 100%
+  );
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem
+}
+
+
+.card{
+  display: grid;
+  grid-template: "a b" 100%/ 70% 30%;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.card--left{
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1 rem;
+}
+
+.card--right{
+  grid-area: b;
+  text-align: end;
+  color: #929395;
+  
+}
+
+span{
+  color: black;
+}
+
+button{
+  background-color: #303b59;
+  color:white;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #533af7;
+  outline: none;
+}
+
+.Reaction{
+  color: #db6067;
+  background-color: #f2fbfa;
+}
+
+.Memory{
+  color: #dfb759;
+  background-color: #fffbf2;
+}
+
+.Verbal{
+  color: #40ab8e;
+  background-color: #f2fbfa;
+}
+
+.Visual{
+  color: #141f9c;
+  background-color: #f3f3fd;
+}
+
+
+@media (min-width:720px) {
+  .main{
+    max-width: 60vw;
+    display: grid;
+    grid-template: 100%/ 50% 50%;
+    margin: 8% auto 0;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 1rem 1rem #f3f3fd;
+  }
+
+  .result{
+    border-radius: 2rem;
+  }
+
+  .summary{
+    padding: 2rem;
+  }
+}
